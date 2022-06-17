@@ -1,13 +1,91 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222831;
+  color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  margin-inline: 40%;
+}
+
+.cat-image {
+  width: 100%;
+  height: 275px;
+  width: 275px;
+  border-radius: 12px;
+}
+
+.fixed-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  overflow-y: scroll;
+  height: 100vh;
+  background-color: #222831;
+  color: #fff;
+  z-index: 1;
+}
+
+.fixed-bar::-webkit-scrollbar {
+  width: 8px;
+  background: #fff;
+}
+
+.fixed-bar::-webkit-scrollbar-thumb {
+  background: #c2c2c2;
+}
+
+.fixed-bar::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+.fixed-bar .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.fixed-bar .title-container {
+  position: sticky;
+  top: 0;
+  background-color: #222831;
+  border-bottom: 1px solid #fff;
+}
+
+.breed-names {
+  padding: 1rem;
+  cursor: pointer;
+  width: 100%;
+  background: none;
+  color: inherit;
+  border: none;
+  outline: inherit;
+  font-size: 1.5rem;
+}
+
+.breed-names:hover {
+  background-color: #c2c2c2;
+}
+
+.breed-names:active {
+  background-color: #b3b3b3;
+}
+
+.breed-names:focus {
+  background-color: #b3b3b3;
+}
+
+:target {
+  background-color: #b3b3b3;
 }
