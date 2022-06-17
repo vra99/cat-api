@@ -24,7 +24,7 @@ export const Breeds: FC<Props> = ({ handleSearchByBreed, setError }) => {
         setBreeds(data);
       })
       .catch((error) => setError(error));
-  }, []);
+  }, [setError]);
 
   return (
     <div className="fixed-bar">
